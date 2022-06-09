@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+    <main>
+        <img src="" alt="Imagem da Tardis do Doctor Who"/>
+        <h2>Faça seu cadastro para receber todas informações sobre o Universo Who!</h2>
+
+        <form action="#" method="post">
+            <fieldset>
+                <legend class="form__legend">Informações básicas</legend>
+                <div class="input__container">
+                    <input type="text" name="name" id="name" class="input" placeholder="Nome" data-type="name" required>
+                    <label class="input__label" for="name">Nome</label>
+                    <span>Este campo não é válido</span>
+                </div>
+
+                <div class="input__container">
+                    <input type="email" name="email" id="email" class="input" placeholder="Email" data-type="email" required>
+                    <label class="input__label" for="email">Email</label>
+                    <span>Este campo não é válido</span>
+                </div>
+
+                <div class="input__container">
+                    <input type="password" name="password" id="password" class="input" placeholder="Senha" data-type="password" required>
+                    <label class="input__label" for="password">Senha</label>
+                    <span>Este campo não é válido</span>
+                </div>
+            </fieldset>
+
+        </form>
+
+    </main>
+
+    <script src="./app.js" type="module"></script>
+</body>
+</html>
