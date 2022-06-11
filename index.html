@@ -1,34 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/input.css">
+    <link rel="stylesheet" href="./css/register.css">
     <title>Formulário de Cadastro</title>
 </head>
-<body class="bg-[#7BC1EB]">
-    <main class="flex flex-col items-center">
-        <img class="w-36 py-4" src="./assets/image/tardis.png" alt="Imagem da Tardis do Doctor Who"/>
-        <h2 class="w-3/4 text-center font-xl font-bold">Faça seu cadastro para receber todas informações sobre o Universo Who!</h2>
 
-        <form class="mt-4 p-4 mx-3 rounded-md bg-sky-50 flex flex-col" action="#" method="post">
+<body>
+    <main class="register__container">
+        <img class="register__image" src="./assets/image/tardis.png" alt="Imagem da Tardis do Doctor Who" />
+        <h2 class="register__title">Faça seu cadastro para receber todas informações sobre o
+            Universo Who!</h2>
+
+        <form class="form__container" action="#" method="post">
             <fieldset>
                 <legend class="font-thin text-2xl text-center mb-5">Informações básicas</legend>
                 <div class="input__container">
-                    <input type="text" name="name" id="name" class="input" placeholder="Nome" data-type="name" required>
-                    <label class="input__label" for="name">Nome</label>
+                    <input
+                        class="box-border border-b border-solid w-full h-[3.25rem] pt-[1.375rem] px-2 pb-2 focus:outline-none"
+                        type="text" name="name" id="name" class="input" placeholder="Nome" data-type="name" required>
+                    <label class="absolute top-[1.375rem] left-2 transition-all duration-75" for="name">Nome</label>
                     <span>Este campo não é válido</span>
                 </div>
 
                 <div class="input__container">
-                    <input type="email" name="email" id="email" class="input" placeholder="Email" data-type="email" required>
+                    <input type="email" name="email" id="email" class="input" placeholder="Email" data-type="email"
+                        required>
                     <label class="input__label" for="email">Email</label>
                     <span>Este campo não é válido</span>
                 </div>
 
                 <div class="input__container">
-                    <input type="password" name="password" id="password" class="input" placeholder="Senha" data-type="password" required>
+                    <input type="password" name="password" id="password" class="input" placeholder="Senha"
+                        data-type="password" required>
                     <label class="input__label" for="password">Senha</label>
                     <span>Este campo não é válido</span>
                 </div>
@@ -37,7 +48,8 @@
             <fieldset>
                 <legend class="font-thin text-2xl text-center my-5">Informações Pessoais</legend>
                 <div class="input__container">
-                    <input type="date" name="birthday" id="birthday" class="input" placeholder="Data de nascimento" data-type="birthday" required>
+                    <input type="date" name="birthday" id="birthday" class="input" placeholder="Data de nascimento"
+                        data-type="birthday" required>
                     <label class="input__label" for="birthday">Data de nascimento</label>
                     <span>Este campo não é válido</span>
                 </div>
@@ -56,19 +68,22 @@
                     <span>Este campo não é válido</span>
                 </div>
                 <div class="input__container">
-                    <input type="text" name="address" id="address" class="input" placeholder="Logradouro" data-type="address" required>
+                    <input type="text" name="address" id="address" class="input" placeholder="Logradouro"
+                        data-type="address" required>
                     <label class="input__label" for="address">Logradouro</label>
                     <span>Este campo não é válido</span>
                 </div>
 
                 <div class="input__container">
-                    <input type="text" name="city" id="city" class="input" placeholder="Cidade" data-type="city" required>
+                    <input type="text" name="city" id="city" class="input" placeholder="Cidade" data-type="city"
+                        required>
                     <label class="input__label" for="city">Cidade</label>
                     <span>Este campo não é válido</span>
                 </div>
 
                 <div class="input__container">
-                    <input type="text" name="state" id="state" class="input" placeholder="Estado" data-type="state" required>
+                    <input type="text" name="state" id="state" class="input" placeholder="Estado" data-type="state"
+                        required>
                     <label class="input__label" for="state">Estado</label>
                     <span>Este campo não é válido</span>
                 </div>
@@ -82,4 +97,5 @@
 
     <!-- <script src="./app.js" type="module"></script> -->
 </body>
+
 </html>
