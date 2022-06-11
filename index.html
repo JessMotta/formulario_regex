@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Formulário de Cadastro</title>
 </head>
-<body>
-    <main>
-        <img src="" alt="Imagem da Tardis do Doctor Who"/>
-        <h2>Faça seu cadastro para receber todas informações sobre o Universo Who!</h2>
+<body class="bg-[#7BC1EB]">
+    <main class="flex flex-col items-center">
+        <img class="w-36 py-4" src="./assets/image/tardis.png" alt="Imagem da Tardis do Doctor Who"/>
+        <h2 class="w-3/4 text-center font-xl font-bold">Faça seu cadastro para receber todas informações sobre o Universo Who!</h2>
 
-        <form action="#" method="post">
+        <form class="mt-4 p-4 mx-3 rounded-md bg-sky-50 flex flex-col" action="#" method="post">
             <fieldset>
-                <legend class="form__legend">Informações básicas</legend>
+                <legend class="font-thin text-2xl text-center mb-5">Informações básicas</legend>
                 <div class="input__container">
                     <input type="text" name="name" id="name" class="input" placeholder="Nome" data-type="name" required>
                     <label class="input__label" for="name">Nome</label>
@@ -34,7 +35,7 @@
             </fieldset>
 
             <fieldset>
-                <legend class="form__legend">Informações Pessoais</legend>
+                <legend class="font-thin text-2xl text-center my-5">Informações Pessoais</legend>
                 <div class="input__container">
                     <input type="date" name="birthday" id="birthday" class="input" placeholder="Data de nascimento" data-type="birthday" required>
                     <label class="input__label" for="birthday">Data de nascimento</label>
@@ -79,6 +80,6 @@
 
     </main>
 
-    <script src="./app.js" type="module"></script>
+    <!-- <script src="./app.js" type="module"></script> -->
 </body>
 </html>
